@@ -1,0 +1,16 @@
+@use '../fundation/breakpoints' as bre;
+@use '../fundation/variables' as var;
+
+.l-inner {
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 15rem 2rem 6rem;
+    @media (max-width: ($ipro)) {
+        max-width: 700px;
+                padding: 15rem 2rem 4rem;
+    }
+    @media (max-width: ($sp)) {
+        max-width: 700px;
+        padding: 8rem 2rem 2rem;
+    }
+}

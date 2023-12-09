@@ -1,0 +1,12 @@
+@use '../fundation/breakpoints' as bre;
+@use '../fundation/variables' as var;
+
+.c-ttl {
+    text-align: center;
+    &__main {
+        font-size: 7rem;
+        @media (max-width: ($sp)) {
+            font-size: 3.6rem;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@use '../fundation/breakpoints' as bre;
+@use '../fundation/variables' as var;
+
+.c-btn {
+    display: block;
+    padding: .5rem 1rem;
+    background: $colorBorder;
+    font-size: 1.6rem;
+    font-family: $fontPlay;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s;
+    @media (max-width: ($sp)) {
+        font-size: 1.4rem;
+    }
+    &:hover {
+        background: $colorMain;
+        @media (max-width: ($ipro)) {
+            opacity: 1;
+        }
+    }
+}

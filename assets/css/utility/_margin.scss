@@ -1,0 +1,19 @@
+@use '../fundation/breakpoints' as bre;
+
+.u-mg--auto {
+    margin: 0 auto;
+}
+
+@for $i from 1 through 100 {
+    .u-mgBottom--#{$i} {
+        margin-bottom: #{$i}px;
+    }
+}
+
+@for $i from 1 through 100 {
+    @media (max-width: ($ipro)) {
+        .u-sp-mgBottom--#{$i} {
+            margin-bottom: #{$i}px;
+        }
+    }
+}
